@@ -1,8 +1,8 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://status.twinight.co' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -15,25 +15,22 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: philip.twinight.co/portfolio
-    description: 'Project Poftfolio' # default=empty
-    url: 'https://philip.twinight.co/portfolio' # URL to fetch
+  - id: project-portfolio # unique identifier
+    name: Philip’s Data Science Diary
+    url: 'https://philip.twinight.co/portfolio/' # URL to fetch
     method: GET # default=GET
     expectStatus: 200 # operational status, default=200
     followRedirect: false # should fetch follow redirects, default=false
     linkable: true # allows the title to be a link, default=true
 
   - id: twinight-co
-    name: twinight.co
-    description: 'Company website.'
-    url: 'https://twinight.co'
+    name: Twinight Limited
+    url: 'https://twinight.co/'
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
 
   - id: philip-twinight-co
-    name: Old Portfolio
+    name: Philip's Old Portfolio
     url: 'https://philip.twinight.co/'
     method: GET
     expectStatus: 200
