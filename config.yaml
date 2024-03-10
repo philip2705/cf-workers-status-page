@@ -1,8 +1,8 @@
 settings:
   title: 'Status Page'
   url: 'https://status.twinight.co' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 30 # number of days you want to display in histogram
+  logo: https://philip.twinight.co/images/logo_p1.png # image in ./public/ folder
+  daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
